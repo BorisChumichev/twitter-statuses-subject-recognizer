@@ -1,7 +1,7 @@
 'use strict';
-var vows = require('vows'),
-  assert = require('assert'),
-  Subject = require('../lib/Subject.js');
+var vows = require('vows')
+  , assert = require('assert')
+  , Subject = require('../lib/Subject.js');
 
 vows.describe('Subject').addBatch({
   'A Subject instance': {

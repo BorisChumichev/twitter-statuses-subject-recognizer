@@ -1,8 +1,8 @@
 'use strict';
-var vows = require('vows'),
-  assert = require('assert'),
-  Subject = require('../lib/Subject.js'),
-  SubjectsCollection = require('../lib/SubjectsCollection.js');
+var vows = require('vows')
+  , assert = require('assert')
+  , Subject = require('../lib/Subject.js')
+  , SubjectsCollection = require('../lib/SubjectsCollection.js');
 
 vows.describe('SubjectsCollection').addBatch({
   'A collection of subjects': {
