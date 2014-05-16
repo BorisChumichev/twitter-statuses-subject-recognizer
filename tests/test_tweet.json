@@ -1,0 +1,261 @@
+{
+    "created_at" : "Sat Apr 12 20:56:24 +0000 2014",
+    "id" : 455087056302006300,
+    "id_str" : "455087056302006272",
+    "text" : "RT @Marble300: The FED GOV'T, LAWLESS Obama, @TheDemocrats Party &amp; #MSM Have NO IDEA How ANGRY America Is at ALL THEM! @KenWahl1 #BundyRanc…",
+    "source" : "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+    "truncated" : false,
+    "in_reply_to_status_id" : null,
+    "in_reply_to_status_id_str" : null,
+    "in_reply_to_user_id" : null,
+    "in_reply_to_user_id_str" : null,
+    "in_reply_to_screen_name" : null,
+    "user" : {
+        "id" : 146566275,
+        "id_str" : "146566275",
+        "name" : "Jeff Gully",
+        "screen_name" : "jeffgully49",
+        "location" : "mpls mn",
+        "url" : "http://www.ilivingapp.com/entry",
+        "description" : "take 5 min and look! it will change your life!",
+        "protected" : false,
+        "followers_count" : 678,
+        "friends_count" : 1997,
+        "listed_count" : 9,
+        "created_at" : "Fri May 21 19:27:27 +0000 2010",
+        "favourites_count" : 77,
+        "utc_offset" : -18000,
+        "time_zone" : "Central Time (US & Canada)",
+        "geo_enabled" : true,
+        "verified" : false,
+        "statuses_count" : 10720,
+        "lang" : "en",
+        "contributors_enabled" : false,
+        "is_translator" : false,
+        "is_translation_enabled" : false,
+        "profile_background_color" : "0099B9",
+        "profile_background_image_url" : "http://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_background_image_url_https" : "https://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_background_tile" : false,
+        "profile_image_url" : "http://pbs.twimg.com/profile_images/445981084820328448/jMhTYerR_normal.jpeg",
+        "profile_image_url_https" : "https://pbs.twimg.com/profile_images/445981084820328448/jMhTYerR_normal.jpeg",
+        "profile_banner_url" : "https://pbs.twimg.com/profile_banners/146566275/1395165151",
+        "profile_link_color" : "250CE6",
+        "profile_sidebar_border_color" : "5ED4DC",
+        "profile_sidebar_fill_color" : "95E8EC",
+        "profile_text_color" : "131214",
+        "profile_use_background_image" : true,
+        "default_profile" : false,
+        "default_profile_image" : false,
+        "following" : null,
+        "follow_request_sent" : null,
+        "notifications" : null
+    },
+    "geo" : null,
+    "coordinates" : {
+        "coordinates":
+            [
+                -75.14310264,
+                40.05701649
+            ],
+        "type":"Point"
+    },
+    "place" : {
+        "attributes":{},
+        "bounding_box":
+        {
+            "coordinates":
+                [[
+                    [-77.119759,38.791645],
+                    [-76.909393,38.791645],
+                    [-76.909393,38.995548],
+                    [-77.119759,38.995548]
+                ]],
+            "type":"Polygon"
+        },
+        "country":"United States",
+        "country_code":"US",
+        "full_name":"Washington, DC",
+        "id":"01fbe706f872cb32",
+        "name":"Washington",
+        "place_type":"city",
+        "url": "http://api.twitter.com/1/geo/id/01fbe706f872cb32.json"
+    },
+    "contributors" : null,
+    "retweeted_status" : {
+        "created_at" : "Sat Apr 12 05:09:15 +0000 2014",
+        "id" : 454848700930879500,
+        "id_str" : "454848700930879488",
+        "text" : "The FED GOV'T, LAWLESS Obama, @TheDemocrats Party &amp; #MSM Have NO IDEA How ANGRY America Is at ALL THEM! @KenWahl1 #BundyRanch #ImpeachObama",
+        "source" : "web",
+        "truncated" : false,
+        "in_reply_to_status_id" : 454793703538712600,
+        "in_reply_to_status_id_str" : "454793703538712576",
+        "in_reply_to_user_id" : 97912404,
+        "in_reply_to_user_id_str" : "97912404",
+        "in_reply_to_screen_name" : "KenWahl1",
+        "user" : {
+            "id" : 66265121,
+            "id_str" : "66265121",
+            "name" : "Marble",
+            "screen_name" : "Marble300",
+            "location" : "",
+            "url" : null,
+            "description" : "Staunch Conservative in Breitbart/Rush Army defeating Liberalism #ImpeachObama #OpSlam #WAR #RedNationRising #NRA #LNYHBT #TeaParty #Secede #EggConvention",
+            "protected" : false,
+            "followers_count" : 18252,
+            "friends_count" : 19579,
+            "listed_count" : 254,
+            "created_at" : "Mon Aug 17 03:27:06 +0000 2009",
+            "favourites_count" : 39443,
+            "utc_offset" : null,
+            "time_zone" : null,
+            "geo_enabled" : false,
+            "verified" : false,
+            "statuses_count" : 103993,
+            "lang" : "en",
+            "contributors_enabled" : false,
+            "is_translator" : false,
+            "is_translation_enabled" : false,
+            "profile_background_color" : "C0DEED",
+            "profile_background_image_url" : "http://abs.twimg.com/images/themes/theme1/bg.png",
+            "profile_background_image_url_https" : "https://abs.twimg.com/images/themes/theme1/bg.png",
+            "profile_background_tile" : false,
+            "profile_image_url" : "http://abs.twimg.com/sticky/default_profile_images/default_profile_6_normal.png",
+            "profile_image_url_https" : "https://abs.twimg.com/sticky/default_profile_images/default_profile_6_normal.png",
+            "profile_link_color" : "0084B4",
+            "profile_sidebar_border_color" : "C0DEED",
+            "profile_sidebar_fill_color" : "DDEEF6",
+            "profile_text_color" : "333333",
+            "profile_use_background_image" : true,
+            "default_profile" : true,
+            "default_profile_image" : true,
+            "following" : null,
+            "follow_request_sent" : null,
+            "notifications" : null
+        },
+        "geo" : null,
+        "coordinates" : null,
+        "place" : null,
+        "contributors" : null,
+        "retweet_count" : 12,
+        "favorite_count" : 6,
+        "entities" : {
+            "hashtags" : [
+                {
+                    "text" : "MSM",
+                    "indices" : [
+                        56,
+                        60
+                    ]
+                },
+                {
+                    "text" : "BundyRanch",
+                    "indices" : [
+                        118,
+                        129
+                    ]
+                },
+                {
+                    "text" : "ImpeachObama",
+                    "indices" : [
+                        130,
+                        143
+                    ]
+                }
+            ],
+            "symbols" : [ ],
+            "urls" : [ ],
+            "user_mentions" : [
+                {
+                    "screen_name" : "TheDemocrats",
+                    "name" : "The Democrats",
+                    "id" : 14377605,
+                    "id_str" : "14377605",
+                    "indices" : [
+                        30,
+                        43
+                    ]
+                },
+                {
+                    "screen_name" : "KenWahl1",
+                    "name" : "Ken Wahl",
+                    "id" : 97912404,
+                    "id_str" : "97912404",
+                    "indices" : [
+                        108,
+                        117
+                    ]
+                }
+            ]
+        },
+        "favorited" : false,
+        "retweeted" : false,
+        "lang" : "en"
+    },
+    "retweet_count" : 0,
+    "favorite_count" : 0,
+    "entities" : {
+        "hashtags" : [
+            {
+                "text" : "MSM",
+                "indices" : [
+                    71,
+                    75
+                ]
+            },
+            {
+                "text" : "BundyRanch",
+                "indices" : [
+                    133,
+                    144
+                ]
+            },
+            {
+                "text" : "ImpeachObama",
+                "indices" : [
+                    143,
+                    144
+                ]
+            }
+        ],
+        "symbols" : [ ],
+        "urls" : [ ],
+        "user_mentions" : [
+            {
+                "screen_name" : "Marble300",
+                "name" : "Marble",
+                "id" : 66265121,
+                "id_str" : "66265121",
+                "indices" : [
+                    3,
+                    13
+                ]
+            },
+            {
+                "screen_name" : "TheDemocrats",
+                "name" : "The Democrats",
+                "id" : 14377605,
+                "id_str" : "14377605",
+                "indices" : [
+                    45,
+                    58
+                ]
+            },
+            {
+                "screen_name" : "KenWahl1",
+                "name" : "Ken Wahl",
+                "id" : 97912404,
+                "id_str" : "97912404",
+                "indices" : [
+                    123,
+                    132
+                ]
+            }
+        ]
+    },
+    "favorited" : false,
+    "retweeted" : false,
+    "filter_level" : "medium",
+    "lang" : "en"
+}
