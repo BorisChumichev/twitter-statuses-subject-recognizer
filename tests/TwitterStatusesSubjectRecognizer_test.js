@@ -2,7 +2,7 @@
 var vows = require('vows')
   , assert = require('assert')
   , fs = require('fs')
-  , TwitterStatusesSubjectRecognizer = require('../index.js').TwitterStatusesSubjectRecognizer;
+  , TwitterStatusesSubjectRecognizer = require('../lib/TwitterStatusesSubjectRecognizer.js');
 
 var testTweet = JSON.parse(fs.readFileSync('tests/test_tweet.json'));
 
