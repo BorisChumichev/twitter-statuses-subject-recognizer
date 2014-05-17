@@ -1,6 +1,6 @@
 {
   "name": "twitter-statuses-subject-recognizer",
-  "version": "0.0.0",
+  "version": "1.0.1",
   "description": "Module lets you define subjects to track and recognize incoming statuses' subjects while working with Twitter Streaming APIs.",
   "main": "index.js",
   "repository": {
@@ -18,7 +18,7 @@
     "recognizer"
   ],
   "devDependencies": {
-      "vows": "*"
+      "vows": "0.7.0"
   },
   "author": "Boris Chumichev <boris362@yandex.ru>",
   "license": "MIT",
