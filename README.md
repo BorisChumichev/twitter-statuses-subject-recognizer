@@ -1,10 +1,9 @@
-twitter-statuses-subject-recognizer
-===================================
+#twitter-statuses-subject-recognizer
 
 `twitter-statuses-subject-recognizer` lets you define subjects to track using Twitter Streaming APIs and recognize incoming statuses' subjects.
 
 ##What problem does this module solve?
-If you decide working with Twitter Streaming APIs and want to track statuses that relate to numerous topics (subjects) you will face the problem that Twitter pushes all statuses in one stream so that your application needs a way to identify the subject of each status. `twitter-statuses-subject-recognizer` solves that problem. Of course it may be used not only with Streaming APIs – assume you have large amount of tweets in your database, and you want to filter those tweets that relate to one or various particular topics.
+If you decide working with Twitter Streaming APIs and want to track statuses that relate to numerous topics (subjects) you will face the problem that Twitter pushes all statuses in one stream so that your application needs a way to identify the subject of each status. `twitter-statuses-subject-recognizer` solves that problem. Of course it may be used not only with Streaming APIs (e.g., assume you have large amount of tweets stored in database, and you want to filter those tweets that relate to one or various particular topics).
 
 #Install
 
@@ -39,7 +38,7 @@ In that case your request to Twitters API may look like:
 	
 	https://stream.twitter.com/1.1/statuses/filter.json?track=github,banitsa,eclair,blachindla,chouquette,путин,putin,普京
 
-where `track` parameter holds all the keywords. You don't have to hardcode `track` parameter, once parser object were instantiated it has `trackString` property which you can use as `track` parameter.
+where `track` parameter holds all keywords concatinated with commas. You don't have to hardcode `track` parameter, once parser object were instantiated it has `trackString` property which you can use as `track` parameter.
 
 	console.log(tssr.trackString);
 	-> 'github,banitsa,eclair,blachindla,chouquette,путин,putin,普京'
@@ -48,11 +47,9 @@ Once you have connected to streaming endpoint you can use `parse` method to reco
 
 	var augmentedTweet = tssr.parse(tweet);
 	
-That's it! `tssr.parse` method creates new object that has all properties of the original tweet and `subjectsCollection` property that holds subjects it's related to. To get names of related subjects use:
+That's it! `tssr.parse` method creates new object that has all properties of the original tweet and `subjectsCollection` property that holds subjects it's related to. To get names of related subjects use: `augmentedTweet.subjectsCollection.names`.
 
-	augmentedTweet.subjectsCollection.names
 
-You can read more about subjectsCollection property in documentation section.
 
 # Example
 
@@ -91,72 +88,3 @@ This example utilizes [`twit` – Twitter API Client for node](https://github.co
 	  console.log(augmentedTweet.subjectsCollection.names);
 	});
 	
-#Documentation
-
-##TwitterStatusesSubjectRecognizer class
-
-**TwitterStatusesSubjectRecognizer** constructor creates new instance of parser for a given set of subjects.
-
-#####Syntax
-
-	new TwitterStatusesSubjecttRecognizer([subject1, subject2, ..., subjectN]);
-	
-#####Parameters
-
-**[subject1, subject2, ..., subjectN]** – an Array of subject objects. Each subject must have `name` and `keywords` properties:
-
-	var exampleSubject = {
-	  name: "expampleName",
-	  keywords: ["keyword1", "keyword2", ..., "keywordN"]
-	}
-	
-#####Example
-
-	var TSSR = require('twitter-statuses-subject-recognizer').TwitterStatusesSubjectRecognizer
-	var subjects = [
-	  {
-	    name: "Pastries",
-  		keywords: ["banitsa", "eclair", "blachindla", "chouquette"]
-	  },
-	  {
-	    name: "Prefectures of Japan",
-  		keywords: ["iwate", "yamaguchi", " ehime", "kagawa"]
-	  },
-	  {
-	    name: "Obama",
-  		keywords: ["обама", "obama", "オバマ"]
-	  }
-	];
-	var tssr = new TSSR(subjects);
-	
-###TwitterStatusesSubjectRecognizer.trackString
-Track parameter for Twitter Streaming APIs. 
-
-#####Syntax
-
-	tssr.trackString
-
-#####Example
-
-	var TSSR = require('twitter-statuses-subject-recognizer').TwitterStatusesSubjectRecognizer
-	var subjects = [
-	  {
-	    name: "Pastries",
-  		keywords: ["banitsa", "eclair", "blachindla", "chouquette"]
-	  }
-	];
-	var tssr = new TSSR(subjects);
-	console.log(tssr.trackString);
-	
-	-> 'banitsa,eclair,blachindla,chouquette'
-
-###TwitterStatusesSubjectRecognizer.prototype.parse()
-Recognizes subjects related to a given tweet object. Returns new object of **AugmentedTweet** class.
-
-#####Syntax
-
-	tssr.parse(tweet);
-	
-#####Parameters
-
-**tweet** must be an instance of Twitter [Tweets](https://dev.twitter.com/docs/platform-objects/tweets) class.
