@@ -13,6 +13,7 @@ If you decide working with Twitter Streaming APIs and want to track statuses tha
 
 Lets say you want to track Twitter statuses related to GitHub, pastries, and Vladimir Putin. First you need to define your subjects and instantiate parser object:
 
+```javascript
 	var TSSR = require('twitter-statuses-subject-recognizer').TwitterStatusesSubjectRecognizer;
 	
 	// Define subjects:
@@ -33,7 +34,8 @@ Lets say you want to track Twitter statuses related to GitHub, pastries, and Vla
 	
 	// Instantiate parser object:
 	var tssr = new TSSR(subjects);
-	
+```
+
 In that case your request to Twitters API may look like:
 	
 	https://stream.twitter.com/1.1/statuses/filter.json?track=github,banitsa,eclair,blachindla,chouquette,путин,putin,普京
@@ -55,6 +57,7 @@ That's it! `tssr.parse` method creates new object that has all properties of the
 
 This example utilizes [`twit` – Twitter API Client for node](https://github.com/ttezel/twit).
 
+```javascript
 	var Twit = require('twit')
   	  , TSSR = require('twitter-statuses-subject-recognizer').TwitterStatusesSubjectRecognizer
 	
@@ -87,4 +90,5 @@ This example utilizes [`twit` – Twitter API Client for node](https://github.co
 	  // Log subject names:
 	  console.log(augmentedTweet.subjectsCollection.names);
 	});
+```
 	
