@@ -27,8 +27,8 @@ var subjects = [
 	keywords: ["banitsa", "eclair", "blachindla", "chouquette"]
   },
   {
-name: "Putin", 
-keywords: ["путин", "putin", "普京"]
+	name: "Putin", 
+	keywords: ["путин", "putin", "普京"]
   }
 ];
 
