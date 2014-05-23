@@ -40,7 +40,7 @@ In that case your request to Twitters API may look like:
 	
 	https://stream.twitter.com/1.1/statuses/filter.json?track=github,banitsa,eclair,blachindla,chouquette,путин,putin,普京
 
-where `track` parameter holds all keywords concatinated with commas. You don't have to hardcode `track` parameter, once parser object were instantiated it has `trackString` property which you can use as `track` parameter.
+where `track` parameter holds all keywords concatinated by commas. You don't have to hardcode `track` parameter, once parser object were instantiated it has `trackString` property which you can use as `track` parameter.
 
 	console.log(tssr.trackString);
 	-> 'github,banitsa,eclair,blachindla,chouquette,путин,putin,普京'
