@@ -59,6 +59,8 @@ That's it! `tssr.parse` method creates new object that has all properties of the
 
 This example utilizes [`twit` – Twitter API Client for node](https://github.com/ttezel/twit).
 
+> **Note:** In order to make authorized calls to Twitter’s APIs, your application must first obtain an OAuth access token on behalf of a Twitter user. Follow [this guide](https://dev.twitter.com/oauth/overview) in order to obtain access token.
+
 ```javascript
 'use strict';
 
@@ -71,7 +73,7 @@ var Twit = require('twit')
 var T = new Twit({
   'consumer_key': "your consumer key",
   'consumer_secret': "your consumer secret",
-  'access_token': "your access_token",
+  'access_token': "your access token",
   'access_token_secret': "your access token secret"
 })
 
