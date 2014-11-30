@@ -55,11 +55,17 @@ That's it! `tssr.parse` method creates new object that has all properties of the
 
 # Example
 
+![Terminal output](https://raw.githubusercontent.com/BorisChumichev/twitter-statuses-subject-recognizer/master/term-shot.png)
+
 This example utilizes [`twit` – Twitter API Client for node](https://github.com/ttezel/twit).
 
 ```javascript
+'use strict';
+
 var Twit = require('twit')
   , TSSR = require('twitter-statuses-subject-recognizer').TwitterStatusesSubjectRecognizer
+  , colors = require('colors')
+  , format = require('util').format
 
 // Instatiate Twitter client using your application credentials:
 var T = new Twit({
@@ -67,28 +73,46 @@ var T = new Twit({
   'consumer_secret': "your consumer secret",
   'access_token': "your access_token",
   'access_token_secret': "your access token secret"
-});
+})
 
 // Define subjects to track
 var subjects = [
   {
-    name: "Putin", 
-    keywords: ["путин", "putin", "普京"]
+    name: "GitHub",
+    keywords: ["github"]
+  },
+  { 
+    name: "Bitbucket",
+    keywords: ["bitbucket"]
+  },
+  {
+    name: "AngularJS",
+    keywords: ["angularjs", "angular", "angular.js"]
+  },
+  {
+    name: "Node",
+    keywords: ["node", "node.js", "nodejs"]
+  },4
+  {
+    name: "npm",
+    keywords: ["npm"]
   }
-];
+]
 
 // Instantiate parser object:
-var tssr = new TSSR(subjects);
+var tssr = new TSSR(subjects)
 
 // Connect to 'statuses/filter' endpoint using twit module.
 // Use tssr.trackString property as track parameter:
-var stream = T.stream('statuses/filter', {track: tssr.trackString});
+var stream = T.stream('statuses/filter', {track: tssr.trackString})
 
 stream.on('tweet', function (tweet) {
   // Recognize subjects:
-  augmentedTweet = tssr.parse(tweet);
+  var augmentedTweet = tssr.parse(tweet)
   // Log subject names:
-  console.log(augmentedTweet.subjectsCollection.names);
-});
+  console.log(format('\nNew tweet about %s by @%s', augmentedTweet.subjectsCollection.names.toString().green)
+    , augmentedTweet.user.screen_name)
+  console.log(format('  -> %s', augmentedTweet.text.blue))
+})
 ```
 	
