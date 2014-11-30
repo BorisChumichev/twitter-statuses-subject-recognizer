@@ -81,10 +81,6 @@ var subjects = [
     name: "GitHub",
     keywords: ["github"]
   },
-  { 
-    name: "Bitbucket",
-    keywords: ["bitbucket"]
-  },
   {
     name: "AngularJS",
     keywords: ["angularjs", "angular", "angular.js"]
