@@ -108,6 +108,7 @@ stream.on('tweet', function (tweet) {
   // Log subject names:
   console.log(format('\nNew tweet about %s by @%s', augmentedTweet.subjectsCollection.names.toString().green)
     , augmentedTweet.user.screen_name)
+  // Log status text:
   console.log(format('  -> %s', augmentedTweet.text.blue))
 })
 ```
