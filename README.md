@@ -113,5 +113,6 @@ stream.on('tweet', function (tweet) {
   // Log status text:
   console.log(format('  -> %s', augmentedTweet.text.blue))
 })
+// Todo: in real world don't forget to handle stream's "error" event ;)
 ```
 	
