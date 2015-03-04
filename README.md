@@ -90,7 +90,7 @@ var subjects = [
   {
     name: "Node",
     keywords: ["node", "node.js", "nodejs"]
-  },4
+  },
   {
     name: "npm",
     keywords: ["npm"]
