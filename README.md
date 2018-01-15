@@ -1,4 +1,4 @@
-### ⛔️ This project is a bit stale and not maintained anymore. Consider using [twitter-stream-channels](https://github.com/topheman/twitter-stream-channels) instead
+### ⛔️ This project is a bit stale and not maintained anymore. Consider using [twitter-stream-channels](https://github.com/topheman/twitter-stream-channels)
 
 # twitter-statuses-subject-recognizer
 
