@@ -1,15 +1,17 @@
-#twitter-statuses-subject-recognizer
+### ⛔️ This project is a bit stale and not maintained anymore. Consider using [twitter-stream-channels](https://github.com/topheman/twitter-stream-channels) instead
+
+# twitter-statuses-subject-recognizer
 
 `twitter-statuses-subject-recognizer` lets you define subjects to track using Twitter Streaming APIs and recognize incoming statuses' subjects.
 
-##What problem does this module solve?
+## What problem does this module solve?
 If you decide working with Twitter Streaming APIs and want to track statuses that relate to numerous topics (subjects) you will face the problem that Twitter pushes all statuses in one stream so that your application needs a way to identify the subject of each status. `twitter-statuses-subject-recognizer` solves that problem. Of course it may be used not only with Streaming APIs (e.g., assume you have large amount of tweets stored in database, and you want to filter those tweets that relate to one or various particular topics).
 
-#Install
+# Install
 
 	$ npm install twitter-statuses-subject-recognizer
 
-#How to use
+# How to use
 
 Lets say you want to track Twitter statuses related to GitHub, pastries, and Vladimir Putin. First you need to define your subjects and instantiate parser object:
 
